@@ -1,0 +1,16 @@
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.csproj.AssemblyReference.cache
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.AssemblyInfoInputs.cache
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.AssemblyInfo.cs
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.csproj.CoreCompileInputs.cache
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\Bank-Heist-2.exe
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\Bank-Heist-2.deps.json
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\Bank-Heist-2.runtimeconfig.json
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\Bank-Heist-2.runtimeconfig.dev.json
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\Bank-Heist-2.dll
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\ref\Bank-Heist-2.dll
+C:\Users\trump\workspace\csharp\Bank-Heist-2\bin\Debug\net5.0\Bank-Heist-2.pdb
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.dll
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\ref\Bank-Heist-2.dll
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.pdb
+C:\Users\trump\workspace\csharp\Bank-Heist-2\obj\Debug\net5.0\Bank-Heist-2.genruntimeconfig.cache
