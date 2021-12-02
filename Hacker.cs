@@ -10,8 +10,6 @@ namespace Bank_Heist_2
 
         public string Job { get; set; }
 
-
-
         public void PerformSkill(Bank Bank)
         {
             Bank.AlarmScore = Bank.AlarmScore - SkillLevel;

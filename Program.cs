@@ -84,16 +84,12 @@ namespace Bank_Heist_2
 
                     Console.WriteLine("Here is your current crew: ");
 
-
                     crew.Add(rolodex[selection - 1]);
                     rolodex.RemoveAt(selection - 1);
                     var crewCount = crew.Count - 1;
 
-
                     Console.WriteLine($"You have added {crew[crewCount].Name} to your crew");
                     Console.WriteLine("");
-
-
 
                     Console.WriteLine("Here is your current crew: ");
 
@@ -120,7 +116,15 @@ namespace Bank_Heist_2
                 operative.PerformSkill(newBank);
             }
 
+            if (newBank.IsSecure)
+            {
+                Console.WriteLine("Heist failed");
+            }
+            else
+            {
+                Console.WriteLine($"Heist Successful");
 
+            }
         }
 
 
