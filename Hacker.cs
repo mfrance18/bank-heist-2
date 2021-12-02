@@ -8,6 +8,10 @@ namespace Bank_Heist_2
         public int SkillLevel { get; set; }
         public int PercentageCut { get; set; }
 
+        public string Job { get; set; }
+
+
+
         public void PerformSkill(Bank Bank)
         {
             Bank.AlarmScore = Bank.AlarmScore - SkillLevel;
@@ -18,7 +22,7 @@ namespace Bank_Heist_2
             {
                 Console.WriteLine($"{Name} has disabled alarm");
             }
-            else Console.WriteLine("Still trying to disable alarm");
+            else Console.WriteLine($"{Name} was unable to disable alarm");
         }
     }
 }

@@ -8,6 +8,8 @@ namespace Bank_Heist_2
         public int SkillLevel { get; set; }
         public int PercentageCut { get; set; }
 
+        public string Job { get; set; }
+
         public void PerformSkill(Bank Bank)
         {
             Bank.VaultScore = Bank.VaultScore - SkillLevel;
@@ -18,7 +20,7 @@ namespace Bank_Heist_2
             {
                 Console.WriteLine($"{Name} has opened Vault");
             }
-            else Console.WriteLine("Still trying to open the Vault");
+            else Console.WriteLine($"{Name} was unable to open the Vault");
         }
     }
 }

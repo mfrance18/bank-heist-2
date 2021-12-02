@@ -36,9 +36,9 @@ namespace Bank_Heist_2
             {
                 return new Dictionary<string, int>
                 {
-                    {"Alarm Score", AlarmScore},
-                    {"Vault Score", VaultScore},
-                    {"Security Guard Score", SecurityGuardScore}
+                    {"Alarm", AlarmScore},
+                    {"Vault", VaultScore},
+                    {"Security", SecurityGuardScore}
                 };
             }
 

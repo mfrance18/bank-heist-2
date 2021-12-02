@@ -7,18 +7,8 @@ namespace Bank_Heist_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
-            Hacker matt = new Hacker();
-            LockSpecialist lockPickingLawyer = new LockSpecialist();
-            Muscle arnold = new Muscle();
-            Hacker mrRobot = new Hacker();
-            Muscle leith = new Muscle();
-
-            List<IRobber> rolodex = new List<IRobber>()
-            {
-                matt, lockPickingLawyer, arnold, mrRobot, leith
-            };
+            List<IRobber> rolodex = new List<IRobber>();
 
             while (true)
             {
@@ -44,6 +34,7 @@ namespace Bank_Heist_2
                 Console.Write("Enter percentage cut for operative(0-100): ");
 
                 int operativePercentage = int.Parse(Console.ReadLine());
+                Console.WriteLine("");
 
                 rolodex = AddOperative(operativeChoice, operativeName, operativeSkillLevel, operativePercentage, rolodex);
             }
@@ -64,6 +55,70 @@ namespace Bank_Heist_2
             Console.WriteLine($"The most secure system is {mostSecure}");
 
             Console.WriteLine($"The least secure system is {leastSecure}");
+            Console.WriteLine("");
+
+            List<IRobber> crew = new List<IRobber>();
+
+            while (true)
+            {
+                try
+                {
+                    var count = 1;
+
+                    Console.WriteLine("Member selection");
+
+                    foreach (IRobber operative in rolodex)
+                    {
+                        Console.WriteLine($"{count++}-Name: {operative.Name}, Job: {operative.Job}, Skill: {operative.SkillLevel}, Percentage Cut: {operative.PercentageCut}");
+                    }
+
+                    Console.Write("Please Select an operative for your heist by typing the number assigned to them: ");
+                    Console.WriteLine("");
+
+                    int selection = int.Parse(Console.ReadLine());
+
+                    if (Convert.ToString(selection) == "")
+                    {
+                        break;
+                    }
+
+                    Console.WriteLine("Here is your current crew: ");
+
+
+                    crew.Add(rolodex[selection - 1]);
+                    rolodex.RemoveAt(selection - 1);
+                    var crewCount = crew.Count - 1;
+
+
+                    Console.WriteLine($"You have added {crew[crewCount].Name} to your crew");
+                    Console.WriteLine("");
+
+
+
+                    Console.WriteLine("Here is your current crew: ");
+
+                    foreach (IRobber member in crew)
+                    {
+                        Console.WriteLine($"{member.Name}, {member.Job}, {member.SkillLevel}, {member.PercentageCut}");
+                    }
+                    Console.WriteLine("");
+
+                }
+
+                catch (FormatException)
+                {
+                    Console.WriteLine("Your crew is complete");
+                    break;
+
+                }
+            }
+
+            Console.WriteLine("Time to perform the heist");
+
+            foreach (IRobber operative in crew)
+            {
+                operative.PerformSkill(newBank);
+            }
 
 
         }
@@ -79,6 +134,7 @@ namespace Bank_Heist_2
                     Name = name,
                     SkillLevel = skillLevel,
                     PercentageCut = percentageCut,
+                    Job = "Hacker"
                 };
 
                 rolodex.Add(newOperative);
@@ -90,6 +146,7 @@ namespace Bank_Heist_2
                     Name = name,
                     SkillLevel = skillLevel,
                     PercentageCut = percentageCut,
+                    Job = "Muscle"
                 };
                 rolodex.Add(newOperative);
             }
@@ -100,6 +157,7 @@ namespace Bank_Heist_2
                     Name = name,
                     SkillLevel = skillLevel,
                     PercentageCut = percentageCut,
+                    Job = "Lock Specialist"
                 };
                 rolodex.Add(newOperative);
             };

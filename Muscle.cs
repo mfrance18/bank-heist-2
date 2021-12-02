@@ -8,6 +8,8 @@ namespace Bank_Heist_2
         public int SkillLevel { get; set; }
         public int PercentageCut { get; set; }
 
+        public string Job { get; set; }
+
         public void PerformSkill(Bank Bank)
         {
             Bank.SecurityGuardScore = Bank.SecurityGuardScore - SkillLevel;
@@ -18,7 +20,7 @@ namespace Bank_Heist_2
             {
                 Console.WriteLine($"{Name} has defeated the Security Guard");
             }
-            else Console.WriteLine("Still fighting the Security Guard");
+            else Console.WriteLine($"Security Guard has defeated {Name}");
         }
     }
 }

@@ -10,6 +10,8 @@ namespace Bank_Heist_2
 
         int PercentageCut { get; set; }
 
+        string Job { get; set; }
+
         void PerformSkill(Bank Bank);
 
     }
